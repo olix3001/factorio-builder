@@ -13,3 +13,7 @@ Because why not?
 # Is it possible?
 
 Problably not, but I'll try anyway
+
+# Todo
+
+Delete this and rewrite it so that it makes any sense

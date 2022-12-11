@@ -3,6 +3,9 @@ use factorio::{
     machines::{Belt, Furnace, Inserter},
 };
 
+use crate::factorio::graph_components::GraphMachine;
+use crate::factorio::graph_machine_list::GraphFurnace;
+
 mod factorio;
 
 fn main() {
@@ -17,6 +20,11 @@ fn main() {
         Belt::new_boxed(Vec2::new(6, 1), Some(Direction::East)),
         Belt::new_boxed(Vec2::new(7, 1), Some(Direction::East)),
     ]);
+
+    println!(
+        "{:?}",
+        GraphFurnace::new().to_normal_machine(Vec2::new(0, 0), None)
+    );
 
     blueprint.draw();
 }
